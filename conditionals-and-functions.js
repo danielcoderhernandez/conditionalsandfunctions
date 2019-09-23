@@ -49,3 +49,35 @@ let squaredNumber = squareNum(12);
 console.log(squaredNumber);
 
 //Scope
+let x = 10;
+
+function addNumbers (n,m,x) {
+	console.log(x);
+	let b;
+	if (1===1) {
+		b = 123;
+	}
+	console.log(b);
+	return n + m;
+}
+addNumbers(2, 3, 8);
+console.log(x);
+
+//Arrays, Loops (counter; comp; incre)
+//              0  1  2  3  4  5  6
+let ourArray = [1, 2, 3, 4, 5, 6, 7];
+
+let arrLen = ourArray.length;
+for(let i = 0; i<arrLen; i++){
+	//console.log("i is equal to:" +1);
+	console.log(ourArray[i]);
+	for(let j = 0; j<10; j++) {
+		console.log('j is equal to: ' + j);
+	}
+}
+//While Loop
+let u = 0;
+while (u < 10) {
+	console.log('Ran');
+	u = u + 1;
+}
